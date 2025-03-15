@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <title>Les Artistes - APF France Handicap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a class="logo" href="index.html">LOGO</a>
+        
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html#musee">Le musée</a></li>
+                <li><a href="index.html#concept">Le concept</a></li>
+                <li><a href="index.html#artiste">Les artistes</a></li>
+                <li><a href="index.html#about">Qui sommes-nous</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="artistes-container"></div>
+
+
+    <footer>
+        <p>&copy; 2025 APF France Handicap - Tous droits réservés</p>
+    </footer>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+                menuToggle.classList.toggle("active");
+            });
+        });
+
+        fetch('artistes.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById("artistes-container");
+
+                data.forEach(artiste => {
+                    const artisteDiv = document.createElement("div");
+                    artisteDiv.classList.add("artiste-card");
+                    artisteDiv.style.borderColor = artiste.couleur;
+
+                    // Ajout de la tache
+                    const tacheImg = document.createElement("img");
+                    tacheImg.src = artiste.tache;
+                    tacheImg.alt = "Tache décorative";
+                    tacheImg.classList.add("tache-artiste");
+
+                    // Conteneur texte
+                    const artisteContent = `
+                        <div class="artiste-content">
+                            <h2>${artiste.prenom} ${artiste.nom}</h2>
+                            <p>${artiste.bio}</p>
+                            ${artiste.interview ? `<a href="${artiste.interview}" class="interview-btn">Voir l'interview</a>` : ""}
+                        </div>
+                    `;
+
+                    // Conteneur image principale
+                    const imageContainer = document.createElement("div");
+                    imageContainer.classList.add("artiste-image");
+
+                    const img = document.createElement("img");
+                    img.src = artiste.images;
+                    img.alt = artiste.nom;
+
+                    imageContainer.appendChild(img);
+
+                    // Ajout des éléments au conteneur principal
+                    artisteDiv.innerHTML = artisteContent;
+                    artisteDiv.appendChild(imageContainer);
+                    artisteDiv.appendChild(tacheImg);
+                    container.appendChild(artisteDiv);
+                });
+            })
+            .catch(error => console.error("Erreur de chargement du JSON :", error));
+
+
+    </script>
+    
+
+
+
+</body>
+</html>

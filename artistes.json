@@ -1,0 +1,137 @@
+[
+    {
+        "nom": "Bari",
+        "prenom": "Abderhaman",
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id porta ante...",
+        "couleur": "#F8B8D3",
+        "tache": "img/rose.png",
+        "images": ["img/Compressed_Salle rose/Abderhaman-Bari-Salle-rose.jpg"],
+        "interview": null
+    },
+    {
+        "nom": "Roynette",
+        "prenom": "Adrien",
+        "bio": "Duis aliquam tellus nisi, eu dictum est facilisis vel...",
+        "couleur": "#F8B8D3",
+        "tache": "img/rose2.png",
+        "images": ["img/Compressed_Salle rose/Adrien-Roynette-Salle-rose.jpg"],
+        "interview": "https://lien-vers-interview.com"
+    },
+    {
+        "nom": "Mayolle",
+        "prenom": "Alexandra",
+        "bio": "Duis aliquam tellus nisi, eu dictum est facilisis vel...",
+        "couleur": "#8D868E",
+        "tache": "img/noire.png",
+        "images": ["img/Compressed_Salle noire/Alexandra-Mayolle-Salle-noir-(3).jpg"],
+        "interview": "https://lien-vers-interview.com"
+    },
+    {
+        "nom": "Layet",
+        "prenom": "Bénédicte",
+        "bio": "Duis aliquam tellus nisi, eu dictum est facilisis vel...",
+        "couleur": "#6CE297",
+        "tache": "img/verte.png",
+        "images": ["img/Compressed_Salle verte/Bénédicte-Layet-Salle-verte.jpg"],
+        "interview": null
+    },
+    {
+        "nom": "Piquard",
+        "prenom": "Brigitte",
+        "bio": "Duis aliquam tellus nisi, eu dictum est facilisis vel...",
+        "couleur": "#7FD7F9",
+        "tache": "img/bleu.png",
+        "images": ["img/Compressed_Salle bleue/Brigitte-Piquard-Salle-bleue.jpg"],
+        "interview": "https://lien-vers-interview.com"
+    }, 
+    {
+        "nom": "Semon",
+        "prenom": "Catherine",
+        "bio": "Duis aliquam tellus nisi, eu dictum est facilisis vel...",
+        "couleur": "#7FD7F9",
+        "tache": "img/bleu2.png",
+        "images": ["img/Compressed_Salle bleue/Catherine-Semon-Salle-bleue.jpg"],
+        "interview": "https://lien-vers-interview.com"
+    },
+    {
+        "nom": "Lecam",
+        "prenom": "Dominique",
+        "bio": "Duis aliquam tellus nisi, eu dictum est facilisis vel...",
+        "couleur": "#F8B8D3",
+        "tache": "img/rose.png",
+        "images": ["img/Compressed_Salle rose/Dominique-Lecam-Salle-rose.jpg"],
+        "interview": null
+    }, 
+    {
+        "nom": "Marchand",
+        "prenom": "Éric",
+        "bio": "Duis aliquam tellus nisi, eu dictum est facilisis vel...",
+        "couleur": "#EED464",
+        "tache": "img/jaune.png",
+        "images": ["img/Compressed_Salle jaune/Eric-Marchand-Salle-jaune.jpg"],
+        "interview": null
+    },
+    {
+        "nom": "Caldaru",
+        "prenom": "Ionut",
+        "bio": "Duis aliquam tellus nisi, eu dictum est facilisis vel...",
+        "couleur": "#8D868E",
+        "tache": "img/noire2.png",
+        "images": ["img/Compressed_Salle noire/Ionut-Caldaru-Salle-noir.jpg"],
+        "interview": null
+    },
+    {
+        "nom": "Pichery",
+        "prenom": "Jean-Daniel",
+        "bio": "Duis aliquam tellus nisi, eu dictum est facilisis vel...",
+        "couleur": "#8D868E",
+        "tache": "img/noire.png",
+        "images": ["img/Compressed_Salle noire/Jean-Daniel-PICHERY-Salle-noir.jpg"],
+        "interview": null
+    },
+    {
+        "nom": "Capdevielle",
+        "prenom": "Julie",
+        "bio": "Duis aliquam tellus nisi, eu dictum est facilisis vel...",
+        "couleur": "#F0EBCD",
+        "tache": "img/blanc.png",
+        "images": ["img/Compressed_Salle blanche/Julie-Capdevielle-Salle-banche.jpg"],
+        "interview": null
+    },
+    {
+        "nom": "Campet",
+        "prenom": "Kévin",
+        "bio": "Duis aliquam tellus nisi, eu dictum est facilisis vel...",
+        "couleur": "#6CE297",
+        "tache": "img/verte2.png",
+        "images": ["img/Compressed_Salle verte/Kévin-Campet-Salle-verte.jpg"],
+        "interview": null
+    },
+    {
+        "nom": "Kammerer",
+        "prenom": "Olivier",
+        "bio": "Duis aliquam tellus nisi, eu dictum est facilisis vel...",
+        "couleur": "#F8B8D3",
+        "tache": "img/rose2.png",
+        "images": ["img/Compressed_Salle rose/Olivier-Kammerer-Salle-rose.jpg"],
+        "interview": "https://lien-vers-interview.com"
+    },
+    {
+        "nom": "Fleury",
+        "prenom": "Thomas",
+        "bio": "Duis aliquam tellus nisi, eu dictum est facilisis vel...",
+        "couleur": "#8D868E",
+        "tache": "img/noire2.png",
+        "images": ["img/Compressed_Salle noire/Thomas Fleury - Salle noir 3.jpg"],
+        "interview": null
+    },
+    {
+        "nom": "Bourdon",
+        "prenom": "Yves",
+        "bio": "Duis aliquam tellus nisi, eu dictum est facilisis vel...",
+        "couleur": "#7FD7F9",
+        "tache": "img/bleu2.png",
+        "images": ["img/Compressed_Salle bleue/Yves-Bourdon-Salle-bleue-(2).jpg"],
+        "interview": null
+    }
+]

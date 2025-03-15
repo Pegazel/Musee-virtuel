@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <title>Musée Virtuel - APF France Handicap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html">LOGO</a>
+            
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#musee">Le musée</a></li>
+                    <li><a href="#concept">Le concept</a></li>
+                    <li><a href="#artiste">Les artistes</a></li>
+                    <li><a href="#about">Qui sommes-nous</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <section class="hero">
+            <h1>Bienvenue au musée virtuel <br>de l'APF France Handicap</h1>
+            <button class="visit">Commencer la visite</button>
+            <div class="portes">
+                <div class="porte noir"><img class="poignee" src="img/poignee.png" alt=""></div>
+                <div class="porte rose"><img class="poignee" src="img/poignee.png" alt=""></div>
+                <div class="porte bleu"><img class="poignee" src="img/poignee.png" alt=""></div>
+                <div class="porte vert"><img class="poignee" src="img/poignee.png" alt=""></div>
+                <div class="porte jaune"><img class="poignee" src="img/poignee.png" alt=""></div>
+                <div class="porte beige"><img class="poignee" src="img/poignee.png" alt=""></div>
+            </div>
+        </section>
+    </header>
+
+    <section id="musee" class="a-propos">
+        <div class="texte">
+            <h2>À propos du musée</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id porta ante. Cras vehicula eu eros ac sollicitudin. Duis aliquam tellus nisi, eu dictum est facilisis vel. Pellentesque pretium enim sit amet gravida finibus. Suspendisse mattis tristique erat et gravida. Mauris efficitur, ligula sit amet sagittis scelerisque, urna metus pharetra massa, id efficitur velit lorem ac neque. Ut rhoncus tincidunt elit, sed imperdiet sem mattis non. Proin sit amet venenatis ligula. Proin rutrum neque vitae commodo aliquet. Pellentesque eget molestie dui. Sed non finibus ligula. Sed convallis risus velit, non vehicula magna volutpat id. 
+            </p>
+            <button class="teaser">Voir le teaser</button>
+        </div>
+        <div class="image-container">
+            <img src="img/verte.png" alt="Tache verte" class="tache">
+            <img src="img/musee.png" alt="Illustration du musée" class="musee">
+        </div>
+    </section>
+
+    <section id="concept" class="concept">
+        <img src="img/bleu.png" class="tache2">
+        <div class="texte2">
+            <h2>Le concept</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id porta ante. Cras vehicula eu eros ac sollicitudin. Duis aliquam tellus nisi, eu dictum est facilisis vel. Pellentesque pretium enim sit amet gravida finibus. Suspendisse mattis tristique erat et gravida. Mauris efficitur, ligula sit amet sagittis scelerisque, urna metus pharetra massa, id efficitur velit lorem ac neque. Ut rhoncus tincidunt elit, sed imperdiet sem mattis non. Proin sit amet venenatis ligula. Proin rutrum neque vitae commodo aliquet. Pellentesque eget molestie dui. Sed non finibus ligula. Sed convallis risus velit, non vehicula magna volutpat id. 
+            </p>
+            
+        </div>
+        <div class="slider-container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/salle-blanc.png" alt="Image 1"></div>
+                    <div class="swiper-slide"><img src="img/salle-bleu.png" alt="Image 2"></div>
+                    <div class="swiper-slide"><img src="img/salle-jaune.png" alt="Image 3"></div>
+                    <div class="swiper-slide"><img src="img/salle-noir.png" alt="Image 4"></div>
+                    <div class="swiper-slide"><img src="img/salle-rose.png" alt="Image 5"></div>
+                    <div class="swiper-slide"><img src="img/salle-verte.png" alt="Image 6"></div>
+                </div>
+                <!-- Flèches de navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="artiste" class="artists-home">
+        <h2>Nos artistes</h2>
+        <div class="artists-container" id="artistes-container">
+            <!-- Les trois premiers artistes -->
+        </div>
+
+        <div class="more-artists">
+            <a href="artistes.html" class="btn">En savoir plus</a>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; 2025 APF France Handicap - Tous droits réservés</p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+                menuToggle.classList.toggle("active");
+            });
+        });
+
+        var swiper = new Swiper('.swiper', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 3, /* Permet d'afficher les images voisines */
+            loop: true,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 50, /* Espace entre les images */
+                depth: 150, /* Effet de profondeur */
+                modifier: 1,
+                slideShadows: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 3, /* Affiche 3 images sur les grands écrans */
+                },
+                480: {
+                    slidesPerView: 1, /* Une seule image sur mobile */
+                }
+            }
+        });
+
+        
+        fetch('artistes.json')
+            .then(response => response.json())
+            .then(data => {
+                const artistsContainer = document.getElementById('artistes-container');
+                data.slice(0, 3).forEach(artist => {
+                    const artistDiv = document.createElement('div');
+                    artistDiv.classList.add('artiste-card');
+                    artistDiv.style.borderColor = artist.couleur;
+    
+                    // Ajout de la tache
+                    const tacheImg = document.createElement("img");
+                    tacheImg.src = artist.tache;
+                    tacheImg.alt = "Tache décorative";
+                    tacheImg.classList.add("tache-artiste");
+    
+                    // Conteneur texte
+                    const artisteContent = `
+                        <div class="artiste-content">
+                            <h3>${artist.prenom} ${artist.nom}</h3>
+                            <p>${artist.bio}</p>
+                        </div>
+                    `;
+    
+                    // Conteneur image principale
+                    const imageContainer = document.createElement("div");
+                    imageContainer.classList.add("artiste-image");
+    
+                    const img = document.createElement("img");
+                    img.src = artist.images[0];
+                    img.alt = artist.nom;
+    
+                    imageContainer.appendChild(img);
+    
+                    // Ajout des éléments au conteneur principal
+                    artistDiv.innerHTML = artisteContent;
+                    artistDiv.appendChild(imageContainer);
+                    artistDiv.appendChild(tacheImg);
+                    artistsContainer.appendChild(artistDiv);
+                });
+            })
+            .catch(error => console.error("Erreur de chargement du JSON :", error));
+    </script>
+    
+    
+</body>
+</html>
